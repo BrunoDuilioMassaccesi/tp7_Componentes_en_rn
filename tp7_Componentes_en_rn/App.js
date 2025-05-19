@@ -17,13 +17,13 @@ const [contador, setContador] = useState(0);
           resizeMode="cover"
           style={styles.backgroundImage}
         >
-          
+          <StatusBar style='light'></StatusBar>
             <Image
               source={imgLocal2}
               style={styles.foto}
             />
             <Text style={styles.nombre}>DreamMatch</Text>
-            <Text style={styles.textContador}>Contador de VIRGOS:</Text>
+            <Text style={styles.textContador}>Contador de InfoPibes:</Text>
 
             <TouchableOpacity style={styles.boton}>  
                   <Text style={styles.numeroContador}>{contador}</Text>
@@ -31,13 +31,13 @@ const [contador, setContador] = useState(0);
             <Pressable
                 style={styles.boton}
                 onPress={() => setContador(contador + 1) }>
-                <Text style={styles.textoBoton}>Soy un Virgo</Text>
+                <Text style={styles.textoBoton}>Soy un infoPibe</Text>
             </Pressable>
             <TextInput
             style={styles.input}
-            placeholder='¿No sos un virgo? , justifica aca...'
+            placeholder='¿No sos un InfoPibe? , justifica aca...'
             />
-            <TouchableOpacity style={styles.justificar} onPress={() => alert('No te cree nadie GOVIRRRR')}>
+            <TouchableOpacity style={styles.justificar} onPress={() => alert('No te cree nadieeee')}>
               <Text style={styles.just}>justificar</Text>
             </TouchableOpacity>
 
